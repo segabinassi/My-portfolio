@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=",/css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/stories.css">
+    <link rel="stylesheet" href="./css/feed.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                DevSocial
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="tab-link active" data-tab="projects"><i class="fas fa-th"></i> Projetos</a>
+                <a href="#" class="tab-link" data-tab="repos"><i class="fas fa-folder"></i> Repositórios</a>
+                <a href="#" class="tab-link" data-tab="contact"><i class="fas fa-paper-plane"></i> Contato</a>
+            </nav>
+            <!-- <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button> -->
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile">
+            <div class="profile-photo">
+                <img src="./assets/anime.webp" alt="Foto de perfil">
+            </div>
+            <div class="profile-info">
+                <h1>Guilherme Segabinassi</h1>
+                <div class="username">@segabinassi</div>
+                <p class="bio">Desenvolvedor Front-End apaixonado por maguinhos e códigos 🧙‍♂️💻</p>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>🇵🇹 Maia, Portugal</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/segabinassi" target="_blank" title="GitHub" class="tooltip"
+                        data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/guilherme-segabinassi-dev/" target="_blank" title="LinkedIn" class="tooltip"
+                        data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- <a href="https://instagram.com/yourusername" target="_blank" title="Instagram" class="tooltip"
+                        data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a> -->
+                    <a href="guilhermecunha704@gmail.com" title="Email" class="tooltip" data-tooltip="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/+351913456485" target="_blank" title="Whatsaap" class="tooltip">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories -->
+        <div class="stories">
+            <div class="story">
+                <div class="story-avatar" data-story="html">
+                    <img src="./assets/html.png" alt="html">
+                </div>
+                <div class="story-name">HTML</div>
+            </div>
+            <div class="story">
+                <div class="story-avatar" data-story="css">
+                    <img src="./assets/css-3.png" alt="css">
+                </div>
+                <div class="story-name">CSS</div>
+            </div>
+            <div class="story">
+                <div class="story-avatar" data-story="Mobile">
+                    <img src="./assets/java-script.png" alt="js">
+                </div>
+                <div class="story-name">JavaScript</div>
+            </div>
+            <div class="story">
+                <div class="story-avatar" data-story="figma">
+                    <img src="./assets/figma.png" alt="figma">
+                </div>
+                <div class="story-name">FIGMA</div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="projects">
+                <i class="fas fa-th"></i> Projetos
+            </div>
+            <div class="tab" data-tab="repos">
+                <i class="fas fa-folder"></i> Repositórios
+            </div>
+            <div class="tab" data-tab="contact">
+                <i class="fas fa-paper-plane"></i> Contato
+            </div>
+        </div>
+
+        <section id="projects" class="content-section active">
+            <!-- Filter bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button href="https://react.dev/" class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="javascript">GIT</button>
+                <button class="filter-btn" data-filter="node">GITHUB</button>
+                <button class="filter-btn" data-filter="api">API</button>
+            </div>
+
+            <div class="feed">
+                <!-- Projeto 1 -->
+                <article class="post" data-tags="html css javascript">
+                    <img src="./assets/circuito aqua.png" alt="Todo App" class="post-image">
+                    <div class="post-content">
+                        <h3 class="post-title">Circuito Aqua</h3>
+                        <p class="post-description">Como um herói da web, trouxe vida a esse projeto com animações e
+                            interatividade. Cada detalhe foi... pensado para oferecer uma experiência imersiva e
+                            destacar a paixão pelos esportes aquáticos.</p>
+                        <div class="post-tags">
+                            <span class="tag">#html</span>
+                            <span class="tag">#css</span>
+                            <span class="tag">#javascript</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="post-stats">
+                                <span class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">24</span>
+                                </span>
+                                <span>
+                                    <i class="far fa-comment"></i>
+                                    <span>3</span>
+                                </span>
+                            </div>
+                            <a href="https://www.circuitoaqua.com.br/" class="post-link view-project"
+                                data-project="Circuito Aqua">Ver Projeto</a>
+                        </div>
+                        <div class="comments">
+                            <p class="comment"><span class="comment-author">dev_maria:</span> Muito clean, adorei a UI!
+                            </p>
+                            <p class="comment"><span class="comment-author">dev_marcos:</span> Parabéns pelo Projeto!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="post" data-tags="react api tailwind">
+                    <img src="./assets/night run.png" alt="Night Run" class="post-image">
+                    <div class="post-content">
+                        <h3 class="post-title">Night Run</h3>
+                        <p class="post-description"> Corri contra o tempo para criar uma interface que traduzisse a
+                            energia e a emoção das corridas noturnas. HTML, CSS e JS foram minhas ferramentas para
+                            construir uma experiência inesquecível.</p>
+                        <div class="post-tags">
+                            <span class="tag">#html</span>
+                            <span class="tag">#php</span>
+                            <span class="tag">#js</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="post-stats">
+                                <span class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">36</span>
+                                </span>
+                                <span>
+                                    <i class="far fa-comment"></i>
+                                    <span>3</span>
+                                </span>
+                            </div>
+                            <a href="https://www.nightrun.com.br/sao-paulo/sao-paulo-2/" class="post-link view-project"
+                                data-project="Circuito Aqua">Ver Projeto</a>
+                        </div>
+                        <div class="comments">
+                            <p class="comment"><span class="comment-author">dev_maria:</span> Muito clean, adorei a UI!
+                            </p>
+                            <p class="comment"><span class="comment-author">dev_marcos:</span> Parabéns pelo Projeto!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Projeto 3 -->
+                <article class="post" data-tags="react api tailwind">
+                    <img src="./assets/circuito das estacoes.png" alt="Circuito das estações" class="post-image">
+                    <div class="post-content">
+                        <h3 class="post-title">Circuito das Estações</h3>
+                        <p class="post-description"> Desenvolvi uma experiência web interativa que celebra as mudanças
+                            das estações, integrando:
+                            ✔ Elementos visuais dinâmicos (transições de cores, efeitos de clima) com CSS/JS
+                            ✔ Navegação intuitiva inspirada em ciclos naturais
+                            ✔ Design responsivo para desktop e mobile</p>
+                        <div class="post-tags">
+                            <span class="tag">#html</span>
+                            <span class="tag">#css</span>
+                            <span class="tag">#php</span>
+                            <span class="tag">#js</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="post-stats">
+                                <span class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">36</span>
+                                </span>
+                                <span>
+                                    <i class="far fa-comment"></i>
+                                    <span>3</span>
+                                </span>
+                            </div>
+                            <a href="https://www.circuitodasestacoes.com.br/sao-paulo/" class="post-link view-project"
+                                data-project="Circuito Aqua">Ver Projeto</a>
+                        </div>
+                        <div class="comments">
+                            <p class="comment"><span class="comment-author">dev_maria:</span> Muito clean, adorei a UI!
+                            </p>
+                            <p class="comment"><span class="comment-author">dev_marcos:</span> Parabéns pelo Projeto!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="post" data-tags="react api tailwind">
+                    <img src="./assets/Circuito biomas.png" alt="Circuito biomas" class="post-image">
+                    <div class="post-content">
+                        <h3 class="post-title">Circuito Biomas</h3>
+                        <p class="post-description">Desenvolvi um site estático responsivo para o evento "Biomas por Todo o Brasil", focado na corrida ecológica em celebração à Mata Atlântica. O projeto foi implementado com HTML, CSS Js e PHP, garantindo integração simplificada com o WordPress para gestão de conteúdo.</p>
+                        <div class="post-tags">
+                            <span class="tag">#html</span>
+                            <span class="tag">#css</span>
+                            <span class="tag">#php</span>
+                            <span class="tag">#js</span>
+                        </div>
+                        <div class="post-actions">
+                            <div class="post-stats">
+                                <span class="like-btn">
+                                    <i class="far fa-heart"></i>
+                                    <span class="like-count">36</span>
+                                </span>
+                                <span>
+                                    <i class="far fa-comment"></i>
+                                    <span>3</span>
+                                </span>
+                            </div>
+                            <a href="https://www.circuitobiomas.com.br/" class="post-link view-project"
+                                data-project="Circuito biomas">Ver Projeto</a>
+                        </div>
+                        <div class="comments">
+                            <p class="comment"><span class="comment-author">dev_maria:</span> Muito clean, adorei a UI!
+                            </p>
+                            <p class="comment"><span class="comment-author">dev_marcos:</span> Parabéns pelo Projeto!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+        </section>
+
+        <footer class="devsocial-footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p class="footer-signature">© 2025 Portfolio criado por <span>Guilherme Segabinassi</span></p>
+
+                    <div class="footer-social">
+                        <a href="https://github.com/segabinassi" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/guilherme-segabinassi-dev/" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="guilhermecunha704@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/+351913456485" target="_blank" title="Whatsaap" class="tooltip">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
